@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+
+
+html body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.hero {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    z-index: -2;
+    pointer-events: none;
+}
+
+h1 {
+    font-family: "Reggae One", system-ui;
+    font-size: 10vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: -0.025em;
+    line-height: 10vw;
+    pointer-events: none;
+}
+
+#toggle {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0;
+    padding: 0.8em 1.6em;
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 40px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 50px -10px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    z-index: 10000;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    mix-blend-mode: difference;
+    z-index: 1000;
+    font-family: "Reggae One", system-ui;
+}
+
+nav div {
+    display: flex;
+    margin: 0 4em;
+}
+
+nav div p {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    padding: 0.8em 1.6em;
+}
+
+#square-container {
+    width: 100Vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: 10000;
+    pointer-events: none;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background: #fd552f;
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+.content-overlay {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    background: #242424;
+    color: #fff;
+    z-index: -1;
+}
+
+.content-overlay h1 {
+    color: O#fd552f;
+    font-size: 4vw;
+}
+
+.content-overlay .nav-link {
+    display: flex;
+    font-family: "Reggae One", system-ui;
+}
+
+.content-overlay .nav-link span {
+    position: relative;
+    top: 0.3em;
+}
+.content-overlay .nav-link a {
+padding: 0 1em;
+font-size: 2em;
+font-weight: 300;
+text-decoration: none;
+color: #fff;
+text-transform: uppercase;
+}
