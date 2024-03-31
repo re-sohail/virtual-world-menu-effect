@@ -4,8 +4,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
     const squareContainer = document.getElementById("square-container");
     const squareSize = 100;
-    const screenWidth = window.innerWidth;
-    const screenHeight = window.innerHeight;
+    const screenWidth = window.innerWidth
+    const screenHeight = window.innerHeight
     const numCols = Math.ceil(screenWidth / squareSize);
     const numRows = Math.ceil(screenHeight / squareSize);
 
