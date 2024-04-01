@@ -3,7 +3,7 @@ window.addEventListener("DOMContentLoaded", () => {
     gsap.set(menu, { opacity: 0 });
 
     const squareContainer = document.getElementById("square-container");
-    const squareSize = 100;
+    const squareSize = 100
     const screenWidth = window.innerWidth
     const screenHeight = window.innerHeight
     const numCols = Math.ceil(screenWidth / squareSize);
