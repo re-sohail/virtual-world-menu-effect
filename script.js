@@ -6,8 +6,8 @@ window.addEventListener("DOMContentLoaded", () => {
     const squareSize = 100
     const screenWidth = window.innerWidth
     const screenHeight = window.innerHeight
-    const numCols = Math.ceil(screenWidth / squareSize);
-    const numRows = Math.ceil(screenHeight / squareSize);
+    const numCols = Math.ceil(screenWidth / squareSize)
+    const numRows = Math.ceil(screenHeight / squareSize)
 
     const numSquares = numCols * numRows;
 
